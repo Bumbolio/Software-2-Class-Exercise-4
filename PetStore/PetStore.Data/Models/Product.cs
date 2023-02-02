@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetStore.Models
+namespace PetStore.Data.Models
 {
-    internal class Product
+    public class Product
     {
+        public Guid ProductId {get; set;}
         public decimal Price { get; set; }
 
         public string Name { get; set; }

@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using PetStore.Models;
+using PetStore.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PetStore.Validators
 {
-    internal class DogLeashValidator : AbstractValidator<DogLeash>
+    internal class DogLeashValidator : AbstractValidator<Product>
     {
         public DogLeashValidator()
         {
