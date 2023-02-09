@@ -17,5 +17,8 @@ namespace PetStore.Data.Models
         public int Quantity { get; set; }
 
         public string Description { get; set; }
+
+        public Order Order { get; set; }
+        public Guid OrderId { get; set; }
     }
 }

@@ -13,7 +13,6 @@ namespace PetStore
 {
     public class ProductLogic : IProductLogic
     {
-        private List<Product> _products;
         private readonly IProductRepository _productRepository;
 
         public ProductLogic(IProductRepository productRepository)
@@ -29,7 +28,7 @@ namespace PetStore
 
         public List<Product> GetAllProducts()
         {
-            return _products;
+            return _productRepository.GetAllProducts();
         }
 
         public Product GetProductByName(string name)
